@@ -11,7 +11,7 @@ You can play around with this for different blood effects or attack effects.
 Currently the configuration allows:
 
 | Effect Rules                                                                             | Description                                                                          |
-|:---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------:|
+|:---------------------------------------------------------------------------------------- |:------------------------------------------------------------------------------------ |
 | [EntityType](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html) | EntityType is the type of entity effected by this rule                               |
 | [id](http://minecraft-ids.grahamedgecombe.com/)                                          | Block id of the effect color. You cannot use meta data.                              |
 | [type](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Effect.html)                  | EffectType is the corresponding effect played when an entity is attacked.            |
