@@ -1,0 +1,20 @@
+# All Entities NOT defined below will receive this effect
+default-id: 152
+default-type: STEP_SOUND
+# Custom Blood Effects
+#  Zombie: <-- EntityType see: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html
+#    id: <-- Block ID to use for Color Note: You cannot use meta IDs eg: 35:14
+#    type: <-- Effect Type see: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Effect.html
+Entities:
+  Zombie:
+    id: 199
+    type: STEP_SOUND
+  Skeleton:
+    id: 1
+    type: SMOKE
+  Spider:
+    id: 179
+    type: STEP_SOUND
+  Player:
+    id: 152
+    type: STEP_SOUND

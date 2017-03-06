@@ -1,0 +1,4 @@
+name: BlockGore
+main: wa.was.bg.BlockGore
+version: 0.1
+commands:
