@@ -4,24 +4,15 @@ import wa.was.bg.events.BloodEffect;
 
 import java.io.File;
 
-import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class BlockGore extends JavaPlugin {
 	
-	public static JavaPlugin plugin;
-	public static FileConfiguration config;
-
-	public BlockGore() {
-    	plugin = this;
-    	
-	}
-	
     @Override
     public void onEnable() {
     	createConfig();
-    	config = getConfig();
-    	getServer().getPluginManager().registerEvents(new BloodEffect(), plugin);
+    	getConfig();
+    	getServer().getPluginManager().registerEvents(new BloodEffect(this), this);
     }
     
     private void createConfig() {

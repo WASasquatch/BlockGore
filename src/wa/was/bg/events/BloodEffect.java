@@ -1,7 +1,5 @@
 package wa.was.bg.events;
 
-import wa.was.bg.BlockGore;
-
 import org.bukkit.Effect;
 import org.bukkit.entity.*;
 import org.bukkit.event.EventHandler;
@@ -12,10 +10,10 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class BloodEffect implements Listener {
 	
-	public static JavaPlugin plugin;
+	private JavaPlugin plugin;
 	
-	public BloodEffect() {
-		plugin = BlockGore.plugin;
+	public BloodEffect(JavaPlugin plugin) {
+		this.plugin = plugin;
 	}
 	
 	@EventHandler(priority = EventPriority.HIGH)
@@ -23,22 +21,22 @@ public class BloodEffect implements Listener {
 		try {
 			if ( e.isCancelled() ) return;
 			if ( e.getEntity().isValid() ) {
-				for( String tag : BlockGore.config.getConfigurationSection("Entities").getKeys(false) ) {
+				for( String tag : plugin.getConfig().getConfigurationSection("Entities").getKeys(false) ) {
 					if ( EntityType.valueOf(tag.toUpperCase()) != null 
-							&& Effect.valueOf(BlockGore.config.getString("Entities."+tag+".type")) != null ) {
+							&& Effect.valueOf(plugin.getConfig().getString("Entities."+tag+".type")) != null ) {
 						EntityType entity = EntityType.valueOf(tag.toUpperCase());
-						Effect type = Effect.valueOf(BlockGore.config.getString("Entities."+tag+".type"));
+						Effect type = Effect.valueOf(plugin.getConfig().getString("Entities."+tag+".type"));
 						if ( e.getEntity().getType() == entity ) {
 							e.getEntity().getWorld().playEffect(e.getEntity().getLocation(), type, 
-										BlockGore.config.getInt("Entities."+tag+".id")); 
+									plugin.getConfig().getInt("Entities."+tag+".id")); 
 							return;
 						}
 					}
 				}
 				// Default gore type
-				Effect type = Effect.valueOf(BlockGore.config.getString("default-type"));
+				Effect type = Effect.valueOf(plugin.getConfig().getString("default-type"));
 				e.getEntity().getWorld().playEffect(e.getEntity().getLocation(), type, 
-						BlockGore.config.getInt("default-type")); 
+						plugin.getConfig().getInt("default-type")); 
 				return;
 			}
 		} catch ( Exception exc ) {
