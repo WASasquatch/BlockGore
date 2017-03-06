@@ -16,6 +16,8 @@ Currently the configuration allows:
 | [id](http://minecraft-ids.grahamedgecombe.com/)                                          | Block id of the effect color. You cannot use meta data.                              |
 | [type](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Effect.html)                  | EffectType is the corresponding effect played when an entity is attacked.            |
 
+It is important you follow YAML Configuration File rules. Do not use tabs, and follow the correct indentation shown below. 
+
 ```YAML
 # All Entities NOT defined below will receive this effect
 default-id: 152
