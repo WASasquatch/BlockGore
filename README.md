@@ -11,9 +11,9 @@ You can play around with this for different blood effects or attack effects.
 Currently the configuration allows:
 
 | [EntityType](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html)                                                                                                |
-| ------------- |:-------------:| ---------------------------------------------------------------------------------------------------------------------------------------------|
-| id            | Block_ID      | Block_ID is effect color. You cannot use meta data.                                                                                          |
-| type          | [EffectType](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Effect.html)    | EffectTtype is the corresponding effect played when an entity is attacked.|
+| ------------- |:---------------------------------------------------------------------------------:| -----------------------------------------------------------------------------------:|
+| id            | Block_ID                                                                         | Block_ID is effect color. You cannot use meta data.                                  |
+| type          | [EffectType](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Effect.html)    | EffectTtype is the corresponding effect played when an entity is attacked.           |
 
 ```YAML
 # All Entities NOT defined below will receive this effect
