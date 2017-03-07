@@ -19,6 +19,9 @@ Currently the configuration allows:
 It is important you follow YAML Configuration File rules. Do not use tabs, and follow the correct indentation shown below. 
 
 ```YAML
+# Valid Worlds to Activate blockGORE
+valid-worlds:
+ - survival_world
 # All Entities NOT defined below will receive this effect
 default-id: 152
 default-type: STEP_SOUND
