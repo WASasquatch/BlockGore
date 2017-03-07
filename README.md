@@ -1,4 +1,4 @@
-[logo]: https://s11.postimg.org/q2rfedvsj/Block_GORE.png "BlockGORE"
+[logo]: https://www.spigotmc.org/attachments/blockgore-png.220304/ "BlockGORE"
 Dyanmically create custom blood effects for entities! 
 **Spigot Version** 1.11 **Developer** WASasquatch
 
