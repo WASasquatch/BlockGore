@@ -1,3 +1,6 @@
+# Valid Worlds to Activate blockGORE
+valid-worlds:
+ - survival_world
 # All Entities NOT defined below will receive this effect
 default-id: 152
 default-type: STEP_SOUND
