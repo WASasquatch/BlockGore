@@ -8,7 +8,12 @@ In BlockGORE we can customize the type of effect played when an entity is attack
 
 You can play around with this for different blood effects or attack effects.
 
-Currently the configuration allows:
+### **Currently the configuration allows:**
+
+  - Setting default worlds the plugin is active in.
+  - Default blood effects for all non-listed entities
+
+### Entities
 
 | Effect Rules                                                                             | Description                                                                          |
 |:---------------------------------------------------------------------------------------- |:------------------------------------------------------------------------------------ |
